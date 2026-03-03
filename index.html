@@ -26,7 +26,7 @@
     .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
     .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-    /* Mobile-specific fixes */
+    /* Mobile fixes */
     @media (max-width: 640px) {
       .hero-bg { background-position: center 30%; min-height: 100dvh; background-attachment: scroll; }
       .hero-text { padding: 0 1rem; }
@@ -56,7 +56,8 @@
         <a href="#book" class="hover:gold transition">Book Now</a>
       </div>
       
-      <a href="#book" class="px-6 py-3 bg-[#d4af37] hover:bg-amber-600 text-white rounded-full font-semibold text-sm tracking-wider transition shadow-md">
+      <a href="#book" 
+         class="px-6 py-3 bg-[#d4af37] hover:bg-amber-600 text-white rounded-full font-semibold text-sm tracking-wider transition shadow-md">
         BOOK YOUR SESSION
       </a>
     </div>
@@ -169,7 +170,7 @@
     </div>
   </section>
 
-  <!-- THE 8 OILS -->
+  <!-- THE 8 OILS - Full grid -->
   <section id="oils" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-16">
@@ -229,7 +230,7 @@
     </div>
   </section>
 
-  <!-- DEEPER DIVE SECTION (restored) -->
+  <!-- DEEPER DIVE - Restored with videos -->
   <section id="deeper" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
@@ -403,15 +404,11 @@
       
       <form action="https://formspree.io/f/mkovdoog" method="POST" class="max-w-md mx-auto space-y-6">
         <div class="grid grid-cols-2 gap-4">
-          <input type="text" name="first_name" placeholder="First Name" required
-                 class="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400 text-white">
-          <input type="text" name="last_name" placeholder="Last Name" required
-                 class="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400 text-white">
+          <input type="text" name="first_name" placeholder="First Name" required class="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400 text-white">
+          <input type="text" name="last_name" placeholder="Last Name" required class="bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400 text-white">
         </div>
-        <input type="email" name="email" placeholder="Email Address" required
-               class="w-full bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400 text-white">
-        <input type="tel" name="phone" placeholder="Phone Number" required
-               class="w-full bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400 text-white">
+        <input type="email" name="email" placeholder="Email Address" required class="w-full bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400 text-white">
+        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full bg-white/10 border border-white/20 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400 text-white">
         
         <div class="grid grid-cols-2 gap-4">
           <input type="text" name="preferred_date" placeholder="Preferred Date (MM/DD)" 
